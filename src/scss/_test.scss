@@ -1,0 +1,28 @@
+// Button
+//
+// Generates a button
+//
+// Markup:
+//  <button class="button {$modifiers}">Click me</button>
+//
+// .button-blue - A blue button.
+// .button-green - A green button.
+// :hover   - Highlights the button on hover.
+//
+// Styleguide 1.1
+
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  border: none;
+}
+
+.button-blue {
+  background-color: #5EABED;
+}
+
+.button-green {
+  background-color: #BADA55;
+}

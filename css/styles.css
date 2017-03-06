@@ -1,0 +1,14 @@
+.button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: white;
+  border: none; }
+
+.button-blue {
+  background-color: #5EABED; }
+
+.button-green {
+  background-color: #BADA55; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,47 @@
+p {
+  margin: 0;
+  padding: 0; }
+
+.eg-person-info {
+  font-family: sans-serif;
+  border: thin solid #222; }
+  .eg-person-info .eg-person-info__name {
+    font-size: 1.2em;
+    background-color: #fe9;
+    padding: 10px; }
+  .eg-person-info .eg-person-info__description {
+    padding: 10px; }
+  .eg-person-info.eg-person-info_role_designer .eg-person-info__name {
+    background-color: #9dd; }
+  .eg-person-info.eg-person-info_role_developer .eg-person-info__name {
+    background-color: #dca; }
+
+.eg-grid {
+  margin-left: -10px; }
+  .eg-grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .eg-grid [class*='eg-grid__item-'] {
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .eg-grid .eg-grid__item-1-2 {
+    width: 50%; }
+  .eg-grid .eg-grid__item-1-1 {
+    width: 100%; }
+
+.eg-page-heading {
+  font-family: sans-serif;
+  font-size: 40px; }
+
+.eg-paragraph {
+  font-family: sans-serif; }
+
+.sg-wrapper .styleguide-placeholder {
+  background-color: #eee;
+  color: #222;
+  padding: 10px; }

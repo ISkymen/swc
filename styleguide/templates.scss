@@ -1,0 +1,47 @@
+// Templates
+//
+// This is the page templates chapter. Templates show what complete view look like and prove that your views are composable from the lower level items you have defined without the need to create ad-hoc style definitions.
+//
+// Styleguide 4.0
+
+// People Listing Page Template
+//
+// Template for pages that list people.
+//
+// Here we bring the Page Header Organism and the People Listing Molecule together as a People Listing Page Template to prove that they can be used to create pages that list people.
+//
+// Exercise 4.1a: Update the page template to match the changes done to the Page Header Organism in Exercise 3.1a.
+//
+// markup:
+// <div class="eg-grid">
+//   <div class="eg-grid__item-1-1">
+//     <h1 class="eg-page-heading">Person Page Title</h1>
+//     <p class="eg-paragraph">Explanation of the purpose of this person listing.</p>
+//   </div>
+// </div>
+// <div class="eg-grid">
+//   <div class="eg-grid__item-1-2">
+//     <div class="eg-person-info">
+//       <div class="eg-person-info__name">Name of a person</div>
+//       <div class="eg-person-info__description">
+//         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
+//         dignissim neque. Suspendisse semper eu metus a congue. Morbi ultrices
+//         venenatis eros at placerat. Mauris gravida lacinia justo sit amet
+//         sodales.
+//       </div>
+//     </div>
+//   </div>
+//   <div class="eg-grid__item-1-2">
+//     <div class="eg-person-info">
+//       <div class="eg-person-info__name">Name of another person</div>
+//       <div class="eg-person-info__description">
+//         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
+//         dignissim neque. Suspendisse semper eu metus a congue. Morbi ultrices
+//         venenatis eros at placerat. Mauris gravida lacinia justo sit amet
+//         sodales.
+//       </div>
+//     </div>
+//   </div>
+// </div>
+//
+// Styleguide 4.1

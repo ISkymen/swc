@@ -5,6 +5,10 @@ p {
 .eg-person-info {
   font-family: sans-serif;
   border: thin solid #222; }
+  .eg-person-info .eg-person-info__title {
+    font-size: 1.2em;
+    background-color: #dca;
+    padding: 10px; }
   .eg-person-info .eg-person-info__name {
     font-size: 1.2em;
     background-color: #fe9;
@@ -13,6 +17,8 @@ p {
     padding: 10px; }
   .eg-person-info.eg-person-info_role_designer .eg-person-info__name {
     background-color: #9dd; }
+  .eg-person-info.eg-person-info_role_administrator .eg-person-info__title {
+    background-color: red; }
   .eg-person-info.eg-person-info_role_developer .eg-person-info__name {
     background-color: #dca; }
 

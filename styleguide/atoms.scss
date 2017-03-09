@@ -37,11 +37,13 @@
 // Exercise 1.1b: Add support for a "title" element to the card.
 //
 // .eg-person-info_role_designer - the person is a designer
+// .eg-person-info_role_administrator - the person is a administrator
 // .eg-person-info_role_developer - the person is a software developer
 // default - a normal person
 //
 // markup:
 // <div class="eg-person-info {$modifiers}">
+//   <div class="eg-person-info__title">Person's title</div>
 //   <div class="eg-person-info__name">Name of the person</div>
 //   <div class="eg-person-info__description">
 //     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
@@ -58,6 +60,12 @@
   font-family: $eg-default-fonts;
   border: thin solid $eg-color-black;
 
+  .eg-person-info__title {
+    font-size: 1.2em;
+    background-color: $eg-color-brown;
+    padding: $eg-spacings;
+  }
+
   .eg-person-info__name {
     font-size: 1.2em;
     background-color: $eg-color-orange;
@@ -71,6 +79,12 @@
   &.eg-person-info_role_designer {
     .eg-person-info__name {
       background-color:  $eg-color-cyan;
+    }
+  }
+
+  &.eg-person-info_role_administrator {
+    .eg-person-info__title {
+      background-color:  red;
     }
   }
 
@@ -226,7 +240,7 @@
 // <input type="text" class="eg-input {$modifiers}" placeholder="placeholder">
 // <input type="text" class="eg-input {$modifiers}" value="value">
 //
-// Styleguide 1.9
+// Styleguide 1.5
 
 .eg-input {
 

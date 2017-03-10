@@ -1,0 +1,72 @@
+
+// Social block with rounded icons
+//
+// An info card with the name and description of a person.
+//
+// We add eg- (exempli gratia) in front of all our styles to put them in their
+// own "namespace".  Your prefix would ideally be unique to the project you are
+// working on.  This atom defines the "person info" block. Its main class is
+// therefore called eg-person-info
+//
+// The different elements (name, description) relevant to the atom are named by
+// concatenating the class of the containing block and the element name with
+// two underscores.  So the class of the name element becomes
+// `eg-person-info_\_name`.
+//
+// We then use a single underscore to specify modifiers for blocks and
+// elements. The cards can have types depending on the role of the person who
+// the card is about. Therefore the roles (developer, designer) introduce the
+// new modifier classes of the form `eg-person-info_role_developer`.  We could
+// also have boolean modifiers like `eg-person-info_important` or specify
+// modifiers for elements, like `eg-person-info__name_birth` for example.
+//
+// It makes sense to scope the element and modifier styles so they only work
+// within the correct containing block.
+//
+// Exercise 1.1a: Add support for a third role "administrator" to the card
+// styles.
+//
+// Exercise 1.1b: Add support for a "title" element to the card.
+//
+// :hover - the person is a designer
+// .s-social__link--fb - the person is a administrator
+// .s-social__link--gp - the person is a administrator
+// .s-social__link--tw - the person is a administrator
+// default - a normal person
+//
+// markup: social-round.html
+//
+// Styleguide 1.0
+
+.s-social__link {
+  display: inline-block;
+  background-image: url(./var/www/my/swc.skm.pp.ua/src/components/blocks/social--round/img/sprite.png);
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0;
+  outline: 0;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &--fb {
+    background-position: -124px -81px;
+  }
+  &--gp {
+    background-position: 0px -143px;
+  }
+  &--tw {
+    background-position: -172px 0px;
+  }
+  &--in {
+    background-position: -172px -84px;
+  }
+  &--pi {
+    background-position: -172px -42px;
+  }
+}

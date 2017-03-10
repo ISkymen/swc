@@ -9,9 +9,9 @@ var styleguide = require('sc5-styleguide');
 
 var sourcePath = 'src';
 var htmlWild = sourcePath + '/**/*.html';
-var styleSourcePath = sourcePath + '/styles';
+var styleSourcePath = sourcePath + '/components';
 var scssWild = styleSourcePath + '/**/*.scss';
-var scssRoot = styleSourcePath + '/tutorial.scss';
+var scssRoot = styleSourcePath + '/styles.scss';
 var overviewPath = styleSourcePath + '/README.md';
 
 var buildPath = 'build';
@@ -19,7 +19,7 @@ var styleBuildPath = buildPath + '/styles';
 var styleguideAppRoot = '/';
 var styleguideBuildPath = buildPath + styleguideAppRoot;
 
-var tmpPath = '/var/www/swc';
+var tmpPath = '/var/www/my/swc.skm.pp.ua';
 var styleguideTmpPath = tmpPath + '/styleguide';
 
 // Building the application
@@ -57,7 +57,8 @@ gulp.task('staticStyleguide:generate', function() {
         title: 'Sky Components',
         rootPath: styleguideBuildPath,
         appRoot: styleguideAppRoot,
-        overviewPath: overviewPath
+        overviewPath: overviewPath,
+        showMarkupSection : false
       }))
     .pipe(gulp.dest(styleguideBuildPath));
 });

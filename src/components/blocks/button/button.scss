@@ -1,0 +1,87 @@
+
+// Buttons
+//
+// Experimental: An alternative signup button styling
+//
+// default - a normal person
+// :hover - the person is a designer
+// .s-button--red - df
+// .s-button--block - sfdsf
+// .s-button--small - dgdf
+// .s-button--more - dgdf
+// .s-button--info - Experimental: An alternative signup button styling
+// .s-button--cart - dgdf
+// .s-button--link - dgdf
+//
+// markup: button.html
+//
+// Styleguide 1.1
+
+.s-button {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffffff;
+  position: relative;
+  padding: 0 50px 0 25px;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 42px;
+  border-radius: 4px;
+  background-color: #666;
+  text-decoration: none;
+  border: 1px solid #fff;
+  transition: all 0.2s ease-in-out;
+
+  &::after {
+    font-family: FontAwesome;
+    padding-left: 20px;
+    right: 25px;
+    top: 0;
+    position: absolute;
+    min-width: 12px;
+    transition: right 0.2s ease-in-out;
+  }
+
+  &:hover {
+       background-color: #333;
+       color: white;
+    &::after {
+      right: 15px;
+    }
+  }
+
+  &--red {
+    background-color: #ff2200;
+    &:hover {
+      background-color: #cc1b00;
+    }
+  }
+
+  &--block {
+    display: block;
+    text-align: center;
+  }
+
+  &--small {
+    padding: 0 45px 0 15px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &--more:after {
+    content: '\f061';
+  }
+
+  &--info:after {
+    content: '\f05a';
+  }
+
+  &--cart:after {
+    content: '\f07a';
+  }
+
+  &--link:after {
+    content: '\f08e';
+  }
+}
+

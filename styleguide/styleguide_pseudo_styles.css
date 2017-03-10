@@ -1,0 +1,16 @@
+.s-social__link.pseudo-class-hover {
+  opacity: 1;
+}
+
+.s-button.pseudo-class-hover {
+  background-color: #333;
+  color: white;
+}
+
+.s-button.pseudo-class-hover::after {
+  right: 15px;
+}
+
+.s-button--red.pseudo-class-hover {
+  background-color: #cc1b00;
+}
